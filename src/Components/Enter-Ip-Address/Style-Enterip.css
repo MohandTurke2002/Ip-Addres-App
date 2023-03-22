@@ -1,0 +1,40 @@
+.container {
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./pattern-bg.png);
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+.input-ip {
+  width: 350px;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.input-ip:focus {
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  background-color: #3f3f3f;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .input-ip {
+    max-width: 275px;
+  }
+}
