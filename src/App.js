@@ -20,6 +20,10 @@ class App extends Component {
     let api_key = "at_XNIxxOEjLiLeD7CT6utgzYWADFCpu";
     let ip = e.target.childNodes[0].value;
     e.preventDefault();
+    this.setState({
+      ...this.state,
+      done: false,
+    });
     let getReq = await fetch(
       `https://geo.ipify.org/api/v2/country,city?apiKey=${api_key}&ipAddress=${ip}`
     );
